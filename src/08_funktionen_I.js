@@ -2,7 +2,6 @@
 /***** Funktionen 01 *****/
 // 1. Kapselung von Codeblöcken
 
-
 // Funktionsaufruf | call
 // test();
 
@@ -40,12 +39,16 @@ function ausgabeNamen2(firstName) { // Parameter
     console.log("Hallo, " + firstName + "!");
 }
 
+
 /***** Funktionen 02c *****/
 // 2c. Mehrere Parameter / Argumente
 
-ausgabeNamenParams("Max", "Mütze")
+// ausgabeNamenParams("Max", "Mütze")
+
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamenParams(prompt("Vorname?: "),prompt("Name?: "));
 
 function ausgabeNamenParams(firstName, familyName) {
     console.log("Hallo, " + firstName + " " + familyName + "!");
-
 }
+
