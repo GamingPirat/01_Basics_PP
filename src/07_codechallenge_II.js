@@ -76,5 +76,5 @@ console.log(`${name} trinkt ${drink}.`);
 // // }
 // else 
 // {
-//   console.log(name + " Trinkt Wein. ");
+//          console.log(name + " Trinkt Wein. ");
 // }
