@@ -47,3 +47,34 @@ if (age > 0 && age < 6) {
 }
 
 console.log(`${name} trinkt ${drink}.`);
+
+
+
+
+
+
+
+// let name = prompt("Geben Sie den Namen ein: ");
+
+// let age = parseInt(prompt("Geben Sie Ihr Alter ein: "));
+// console.log(name);
+// console.log(age);
+
+// if (age <= 5) {
+//         console.log(name + " Trinkt Milch. ");
+// } 
+// else if (age = 6 && age <= 12){
+//         console.log(name + " Trinkt Saft. ");
+// }
+// else if (age = 13 && age <= 17)
+// {
+//         console.log(name + " Trinkt Cola. ");
+// }
+// // else if (age = 18 && age <= 300)
+// // {
+// //         console.log(name + " Trinkt Wein. ");
+// // }
+// else 
+// {
+//   console.log(name + " Trinkt Wein. ");
+// }
