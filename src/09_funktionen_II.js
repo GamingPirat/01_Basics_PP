@@ -11,32 +11,37 @@
 */
 
 const ERROR_STR_DIV = "Teilen durch null nicht möglich";
+const ERROR_STR_GEN = "Irgendwas ging schief!";
+
+/** Was soll gemacht werden?  */
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
-function calculator(a,b,op) {
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
+function calculator(a,b,op) {	// Was soll gemacht werden?
 
 	switch (op) {
-		case "+": // Addition
-			return "Addition";
-		case "-": // Subtraktion
-			return "Substraktion";
-		case "*": // Multiplikation
-			return "Multiplikation";
+		case "+": 
+			return add(a,b); // Addition
+		case "-": 
+			return subtract(a,b); // Subtraktion
+		case "*": 
+			return multiply(a,b); // Multiplikation
 		case "/":
 		case ":":
-			return "Division";
+			return divide(a,b); // Division
 		default:
-			return "Fehler"
+			return ERROR_STR_GEN
 	}
 }
+
+/**Wie sollen die Aufgaben gelöst werden?  */
 
 // module: division a / b |  test:
 // output(divide(4,2));
