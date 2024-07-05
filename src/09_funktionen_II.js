@@ -10,6 +10,8 @@
 4. Ausgabe in Konsole : check!
 */
 
+const ERROR_STR_DIV = "Teilen durch null nicht möglich";
+
 
 // module: division a / b |  test:
 output(divide(4,2));
@@ -24,7 +26,7 @@ if (b != 0) {
 	return a / b;
 
 } else {
-	return ("Teilen durch null nicht möglich");
+	return ERROR_STR_DIV;
 }
 
 
