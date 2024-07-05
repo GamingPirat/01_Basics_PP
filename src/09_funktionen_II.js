@@ -20,12 +20,13 @@ output(divide(0,2));
 output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
-if (b != 0) {
-	return a / b;
 
-} else {
-	return ERROR_STR_DIV;
+if (b == 0) {
+	return ERROR_STR_DIV; // Ausnahme
 }
+
+	return a / b; // Regel
+	
 }
 
 // module: multiplication a - b |  test:
