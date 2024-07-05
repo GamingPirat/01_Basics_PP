@@ -12,7 +12,6 @@
 
 const ERROR_STR_DIV = "Teilen durch null nicht möglich";
 
-
 // module: division a / b |  test:
 output(divide(4,2));
 output(divide(3,2));
@@ -21,17 +20,12 @@ output(divide(0,2));
 output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
-
 if (b != 0) {
 	return a / b;
 
 } else {
 	return ERROR_STR_DIV;
 }
-
-
-
-
 }
 
 // module: multiplication a - b |  test:
