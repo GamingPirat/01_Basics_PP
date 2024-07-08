@@ -95,11 +95,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = ""; // Anfangswert
-for (let i = 0; i < 10; i++) {
-   str += "Test" + " "; // a = a + 1
-   output(str);
-}
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
 
 
 
@@ -111,35 +111,38 @@ for (let i = 0; i < 10; i++) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
+
     const GAP = " ";
     const PUNCT = ".";
-    for (let i = 0; i < arr.length; i++) 
-{
-   output(arr[i]);  // Mapping intern --> extern
-}
-    return str;
-}
+    let str = ""; // Anfangswert
+    
+    for (let i = 0; i < arr.length; i++) {
+       str += arr[i] + GAP; // a = a + 1
+    }
 
+        // return str + PUNCT;
+        // return str + GAP;
+}    
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 // output(getSentence("Ich","bin","Max","Mütze"));
 // output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   word1 + GAP +
-                word2 + GAP +
-                word3 + GAP +
-                word4 + GAP +
-                word5 + GAP +
-                word6 +
-                PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   word1 + GAP +
+//                 word2 + GAP +
+//                 word3 + GAP +
+//                 word4 + GAP +
+//                 word5 + GAP +
+//                 word6 +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 
 
