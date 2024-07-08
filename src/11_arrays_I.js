@@ -118,13 +118,18 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str = ""; // Anfangswert
     
+    // 1. Iteration: Struktur GENAU erzeugen ...
     for (let i = 0; i < arr.length; i++) {
-       str += arr[i] + GAP; // a = a + 1
-    }
+        if (i != arr.length - 1) {    // wenn du noch nicht am Ende des Arrays bist ...
+            str += arr[i] + GAP; // a = a + 1
 
-        // return str + PUNCT;
-        // return str + GAP;
+        } else {
+            str += arr[i] + PUNCT; // oder
+        }
+    }
+    return str
 }    
+
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
