@@ -1,6 +1,6 @@
 /***** Erinnerung: Arrays *******/
 
-let arr;
+// let arr;
 // arr = ["Ich","bin","Max"];
 // output(arr);
 // output(arr[0]);
@@ -30,8 +30,28 @@ let arr;
 
 /***** Objekte 1 Daten/Funktionen *******/
 
+let person = {
+                firstName:"Marco",
+                familyName:"Grochowiak",
+                salary:[120000, 160000],
+                permisson: true,
+                sayHello: function(){
+                            // return "Hallo"}
+                            return "Hallo ich bin " + this.firstName;
+}
+}
+output (person);
+output(person.firstName);
+output(person.familyName);
+output(person.salary[1]);
+output(person.permisson);
+output(person.sayHello());
 
+// const txt = person.sayHello() + ", ich bin " + person.firstName +
+//             " und verdiene " + person.salary[1] + " p.a."
 
+const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
+output(txt);
 
 
 // Modul: Ausgabe | Test
