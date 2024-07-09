@@ -2,15 +2,15 @@
 
 // push() / pop()
 // push --> Daten rein ... (+)
-let arr = [];
-output(arr);
+// let arr = [];
+// output(arr);
 
-arr.push("Ich");
-output(arr);
-arr.push("bin");
-output(arr);
-arr.push("Max");
-output(arr);
+// arr.push("Ich");
+// output(arr);
+// arr.push("bin");
+// output(arr);
+// arr.push("Max");
+// output(arr);
 
 // // pop() --> Daten raus ... (-)
 // output(arr.pop());
@@ -63,7 +63,7 @@ const TAB_STR = "\t";
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-//output(getHTML());
+// output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
